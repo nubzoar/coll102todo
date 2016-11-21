@@ -1,12 +1,26 @@
-<ul>
-	<li ng-repeat='email in emails'>
-		<a href="/#/email/{{email._id}}">
-			{{email.reminder}} -- {{email.date}}
-		</a>
-		<a href="/#/delete/{{email._id}}">
-            <i class="glyphicon glyphicon-remove"></i>
-        </a>
-	</li>
-</ul>
-
-<a href="/#/add-reminder/{{address}}"><p>Add a reminder</p></a>
+<div class="container">
+	<h2>Your reminders for {{address}}</h2><br />
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Reminder Desciption</th>
+				<th>Date & Time</th>
+				<th>Edit / Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat='email in emails'>
+				<td>{{email.reminder}}</td>
+				<td>{{email.date}}</td>
+				<td class="text-right">
+					<a href="/#/email/{{email._id}}"><i class="glyphicon glyphicon-pencil"></i></a>
+					<a href="/#/delete/{{email._id}}"><i class="glyphicon glyphicon-remove"></i></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+	<a href="/#/add-reminder/{{address}}" class="btn btn-sm btn-success btn-block">
+		<i class="glyphicon glyphicon-plus"></i>
+	</a>
+</div>

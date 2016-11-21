@@ -9,4 +9,8 @@ html(ng-app='RemindMe')
 		script(src='/javascripts/remindme.js')
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
 	body
+		#container(class='container')
+			nav(class='navbar navbar-inverse')
+				div(class='navbar-header')
+					a(class='navbar-brand', href='/#/') Remind Me
 		block content

@@ -48,6 +48,8 @@ app.controller('DisplayCtrl', ['$scope', '$resource', '$routeParams',
 
 app.controller('AddReminderCtrl', ['$scope', '$resource', '$location', '$routeParams',
     function($scope, $resource, $location, $routeParams){
+		$scope.address = $routeParams.address;
+		
 		$scope.save = function(){
 			var Emails = $resource('/api/emails');
 			$scope.email.address = $routeParams.address;

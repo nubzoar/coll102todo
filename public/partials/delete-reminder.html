@@ -1,10 +1,18 @@
-<h1>Delete Reminder</h1>
-<p>
-    Are you sure you want to delete this reminder?
-</p>
-<ul>
-    <li>Reminder Text: {{email.reminder}}</li>
-    <li>Date and Time: {{email.date}}</li>
-</ul>
-<input type="button" value="Yes, Delete" class="btn btn-danger" ng-click="delete()" />
-<a class="btn btn-default" href="/#/display/{{address}}">No, Go Back</a>
+<div class="container">
+	<h3>Delete Reminder</h3>
+	<div class="alert alert-info">
+		<strong>Description:</strong> {{email.reminder}}
+		<br />
+		<strong>Date & Time:</strong> {{email.date}}
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-2 alert alert-warning" role="alert">
+			Are you sure you want to delete this reminder?
+			<div class="text-right">
+				<input type="button" value="Yes, Delete" class="btn btn-danger" ng-click="delete()" />
+				<a class="btn btn-default" href="/#/display/{{address}}">No, Go Back</a>
+			</div>
+		</div>
+	</div>
+</div>
