@@ -1,6 +1,15 @@
+- Researching email methods.
+
+[v0.2] - November 21st, 2016
+- Finished basic application structure.
+- Implemented CRUD functionality. (Create, Read, Update, Delete)
+- Integrated Bootstrap for a front-end overhaul.
+
 [v0.1] - November 20th, 2016
 - Finished MEAN stack tutorial on blog.udemy.com.
 - Wrote out list of bare-bones features in README.md
+- Initial scaffolding and git setup
+- Started on basic functionality.
 
 [v0.0] - November 16th, 2016
 - Researched platform for a Single Page Application. Decided on a MEAN stack. (MongoDB, Express.js, Angular, Node.js)
