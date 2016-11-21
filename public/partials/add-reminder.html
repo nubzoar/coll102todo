@@ -1,0 +1,14 @@
+<h1>Add a Reminder</h1>
+
+<form>
+	<div>
+		<label>Reminder</label>
+		<textarea ng-model="email.reminder"></textarea>
+	</div>
+	<div>
+		<label>Date</label>
+		<input type="datetime-local" ng-model="email.date"></input>
+	</div>
+	<input type="button" value="Save" ng-click="save()"></input>
+	<a class="btn btn-default" href="/#/display/{{address}}">Cancel</a>
+</form>

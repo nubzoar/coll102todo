@@ -1,0 +1,12 @@
+<ul>
+	<li ng-repeat='email in emails'>
+		<a href="/#/email/{{email._id}}">
+			{{email.reminder}} -- {{email.date}}
+		</a>
+		<a href="/#/delete/{{email._id}}">
+            <i class="glyphicon glyphicon-remove"></i>
+        </a>
+	</li>
+</ul>
+
+<a href="/#/add-reminder/{{address}}"><p>Add a reminder</p></a>
