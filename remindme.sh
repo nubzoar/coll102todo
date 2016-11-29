@@ -5,13 +5,13 @@ REMINDMEIMAGE=atomney/remindme
 REMINDMENAME=remindme
 DBIMAGE=mongo
 DBCONTAINERNAME=remindme-db
-PORT=3000
+PORT=80
 
 
 ########## INSTALL
 if [ "$1" = "--install" ]; then
         docker run -d --name $DBCONTAINERNAME $DBIMAGE
-        docker run -d --name $REMINDMENAME --link $DBCONTAINERNAME:mongo -p 3000:3000 $REMINDMEIMAGE
+        docker run -d --name $REMINDMENAME --link $DBCONTAINERNAME:mongo -p $PORT:3000 $REMINDMEIMAGE
 fi
 
 
