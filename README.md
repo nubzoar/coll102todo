@@ -11,3 +11,6 @@ Define bare-bones features:
 *	Stores this information until the time to send the email.  
 *	Sends an email at the specified time and date.  
 *	Deletes the stored information.  
+
+
+[][![Dply](https://dply.co/b.svg)](https://dply.co/b/4dptNu89) 
