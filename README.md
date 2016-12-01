@@ -13,4 +13,4 @@ Define bare-bones features:
 *	Deletes the stored information.  
 
 
-[][![Dply](https://dply.co/b.svg)](https://dply.co/b/4dptNu89) 
+[![Dply](https://dply.co/b.svg)](https://dply.co/b/v83LqMkT)
